@@ -18,7 +18,7 @@ Practic, securitatea întregii aplicații ar fi compromisă, ceea ce ar putea du
 ### Nr. 3. Principiile de bază ale lucrului cu cererile HTTP
 #### Nr. 3.1. Crearea rutelor pentru pagina principală și pagina "Despre noi"
 #### Nr. 3.2. Crearea rutelor pentru sarcini
-![alt text][image.png]
+![imagine ](image-1.png)
 * Întrebare: Explicați diferența între crearea manuală a rutelor și utilizarea unui controller de resurse. Ce rute și ce nume de rute vor fi create automat?
 - Diferența între crearea manuală a rutelor și utilizarea unui controller de resurse este:
 
