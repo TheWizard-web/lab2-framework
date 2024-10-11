@@ -18,5 +18,26 @@ Practic, securitatea întregii aplicații ar fi compromisă, ceea ce ar putea du
 ### Nr. 3. Principiile de bază ale lucrului cu cererile HTTP
 #### Nr. 3.1. Crearea rutelor pentru pagina principală și pagina "Despre noi"
 #### Nr. 3.2. Crearea rutelor pentru sarcini
+![alt text](image.png)
 * Întrebare: Explicați diferența între crearea manuală a rutelor și utilizarea unui controller de resurse. Ce rute și ce nume de rute vor fi create automat?
-- 
+- Diferența între crearea manuală a rutelor și utilizarea unui controller de resurse este:
+
+* Crearea manuală a rutelor:
+- Fiecare rută trebuie să fie definită manual, ceea ce poate duce la cod duplicat și mai mult efort de gestionare.
+- Control total asupra fiecărei rute, dar la un cost de complexitate.
+
+* Utilizarea unui controller de resurse:
+- Rutele sunt generate automat, ceea ce economisește timp și reduce riscul de erori.
+- Rutele respectă convențiile Laravel, făcând codul mai curat și mai ușor de înțeles.
+- Mai ușor de extins și întreținut, deoarece orice modificare în operațiile CRUD se poate face în controller, fără a modifica rutele.
+### Nr. 4. Șablonizarea folosind Blade
+#### Nr. 4.1. Crearea unui layout pentru pagini
+#### Nr. 4.2. #### Nr. 4.1. Crearea unui layout pentru pagini
+#### Nr. 4.3. Componente anonime Blade
+#### Nr. 4.4. Stilizarea paginilor
+#### Nr. 4.5. Sarcini suplimentare
+## Întrebări de control
+- Ce este un controller de resurse în Laravel și ce rute creează?
+- Explicați diferența între crearea manuală a rutelor și utilizarea unui controller de resurse.
+- Ce avantaje oferă utilizarea componentelor anonime Blade?
+- Ce metode de cereri HTTP sunt folosite pentru a executa operațiunile CRUD?
