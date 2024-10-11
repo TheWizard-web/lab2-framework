@@ -8,7 +8,7 @@ Această pagină afișează un mesaj de tip **"Laravel"**.
 Este o pagină de test care confirmă că Laravel a fost instalat și configurat corect și că serverul local funcționează.
 ### Nr. 2. Configurarea mediului
 * Întrebare: Ce s-ar întâmpla dacă această cheie ar ajunge pe mâna unui răufăcător?
-Dacă cheia aplicației setată în fișierul `.env` ar ajunge pe mâna unui răufăcător, acesta ar putea compromite securitatea aplicației. Cheia este utilizată pentru criptarea datelor sensibile, cum ar fi token-uri de autentificare, parole criptate și alte informații private. Un răufăcător ar putea:
+- Dacă cheia aplicației setată în fișierul `.env` ar ajunge pe mâna unui răufăcător, acesta ar putea compromite securitatea aplicației. Cheia este utilizată pentru criptarea datelor sensibile, cum ar fi token-uri de autentificare, parole criptate și alte informații private. Un răufăcător ar putea:
 
 - Decripta datele sensibile stocate în aplicație.
 - Accesa și manipula informații confidențiale ale utilizatorilor.
@@ -19,3 +19,4 @@ Practic, securitatea întregii aplicații ar fi compromisă, ceea ce ar putea du
 #### Nr. 3.1. Crearea rutelor pentru pagina principală și pagina "Despre noi"
 #### Nr. 3.2. Crearea rutelor pentru sarcini
 * Întrebare: Explicați diferența între crearea manuală a rutelor și utilizarea unui controller de resurse. Ce rute și ce nume de rute vor fi create automat?
+- 
