@@ -109,13 +109,47 @@ Practic, securitatea întregii aplicații ar fi compromisă, ceea ce ar putea du
 
 #### Nr. 4.1. Crearea unui layout pentru pagini
 
-#### Nr. 4.2. #### Nr. 4.1. Crearea unui layout pentru pagini
+1. Creați un layout pentru paginile principale layouts/app.blade.php cu următoarele elemente comune ale paginii:
+
+- Titlul paginii;
+- Meniu de navigare;
+- Conținutul paginii.
+
+2. Folosiți directiva @yield pentru a defini zona în care va fi inserat conținutul diferitelor pagini.
+   ![appblade](image-13.png)
+
+#### Nr. 4.2. Utilizarea șabloanelor Blade
+
+1. Creați vizualizarea pentru pagina principală home.blade.php folosind layoutul layouts/app.blade.php în directorul resources/views.
+   ![homeblade](image-14.png)
+
+2. Pe pagina principală trebuie să fie:
+
+- Mesaj de bun venit: titlu și o scurtă descriere a aplicației, de exemplu „To-Do App pentru echipe”.
+- Navigație: linkuri către secțiunile principale, cum ar fi:
+  Lista de sarcini, crearea unei sarcini.
+- Informații despre aplicație: o scurtă descriere a scopului aplicației și a principalelor sale funcții.
+  ![homepage](image-15.png)
+
+3. Creați vizualizarea pentru pagina "Despre noi" — about.blade.php folosind layoutul layouts/app.blade.php în directorul resources/views.
+   ![aboutpage](image-16.png)
+4. Creați vizualizări pentru sarcini cu următoarele șabloane în directorul resources/views/tasks:
+
+- index.blade.php — lista de sarcini;
+- show.blade.php — afișarea unei sarcini;
+- ...
+  ![vizualizarisarcini](image-17.png)
+
+5. Randați lista de sarcini pe pagina index.blade.php folosind date statice transmise din controller cu ajutorul directivei @foreach.
+   ![randarelistsarcini](image-18.png)
 
 #### Nr. 4.3. Componente anonime Blade
 
 #### Nr. 4.4. Stilizarea paginilor
 
 #### Nr. 4.5. Sarcini suplimentare
+
+### Nr. 5. Sarcini suplimentare
 
 ## Întrebări de control
 
