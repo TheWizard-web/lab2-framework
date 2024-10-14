@@ -64,7 +64,28 @@ Practic, securitatea întregii aplicații ar fi compromisă, ceea ce ar putea du
 - update — actualizarea sarcinii;
 - destroy — ștergerea sarcinii.
 
-![imagine ](image.png)
+![metode](image-5.png)
+
+2. Creați rutele pentru metodele controllerului TaskController în fișierul routes/web.php și specificați metodele HTTP corecte pentru fiecare rută.
+   ![definirearutelor](image-6.png)
+   ![metodecontr](image-7.png)
+
+3. Utilizați gruparea rutelor pentru controllerul TaskController cu prefixul `/tasks` pentru a simplifica rutarea și a îmbunătăți lizibilitatea codului.
+   ![gruparedupaprefix](image-9.png)
+
+4. Definiți nume corecte pentru rutele controllerului TaskController, de exemplu:
+
+- tasks.index — lista de sarcini;
+- tasks.show — afișarea unei sarcini individuale.
+- ...
+  ![numedescriptiverute](image-8.png)
+
+5. Adăugați validarea parametrilor rutei id pentru sarcini. Asigurați-vă că parametrul id este un număr întreg pozitiv. Utilizați metoda where pentru a limita valorile parametrului id.
+   ![where](image-10.png)
+
+6. În loc să creați manual rute pentru fiecare metodă, puteți folosi un controller de resurse, care va crea automat rute pentru toate operațiunile CRUD:
+   În fișierul routes/web.php, înlocuiți crearea manuală a rutelor pentru controllerul TaskController cu un controller de resurse: php Route::resource('tasks', TaskController::class);
+   ![controllerderesurse](image-11.png)
 
 - Întrebare: Explicați diferența între crearea manuală a rutelor și utilizarea unui controller de resurse. Ce rute și ce nume de rute vor fi create automat?
 
@@ -80,6 +101,9 @@ Practic, securitatea întregii aplicații ar fi compromisă, ceea ce ar putea du
 * Rutele sunt generate automat, ceea ce economisește timp și reduce riscul de erori.
 * Rutele respectă convențiile Laravel, făcând codul mai curat și mai ușor de înțeles.
 * Mai ușor de extins și întreținut, deoarece orice modificare în operațiile CRUD se poate face în controller, fără a modifica rutele.
+
+7. Verificați rutele create cu ajutorul comenzii
+   ![listarutelor](image-12.png)
 
 ### Nr. 4. Șablonizarea folosind Blade
 
