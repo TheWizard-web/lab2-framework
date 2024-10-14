@@ -168,9 +168,23 @@ Practic, securitatea întregii aplicații ar fi compromisă, ceea ce ar putea du
 
 #### Nr. 4.4. Stilizarea paginilor
 
-#### Nr. 4.5. Sarcini suplimentare
+Stilizarea paginilor utilizand biblioteca de stiluri Tailwind CSS.
 
-### Nr. 5. Sarcini suplimentare
+1. Instalarea Tailwind CSS
+   `npm install -D tailwindcss postcss autoprefixer`
+   `npx tailwindcss init`
+   Aceasta va crea un fișier de configurare `tailwind.config.js` în directorul rădăcină al proiectului.
+2. Configurarea Tailwind CSS
+   ![includefisiereleblade](image-24.png)
+3. Crearea fișierului CSS
+   `mkdir -p resources/css`
+   `touch resources/css/app.css`
+   În `app.css` adaugăm următorul cod:
+   ![appcssfile](image-25.png)
+4. Compilarea CSS-ului
+   ![compilarecss](image-26.png)
+5. Includerea CSS-ului în layout
+   ![csslayout](image-27.png)
 
 ## Întrebări de control
 
