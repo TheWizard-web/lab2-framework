@@ -174,8 +174,8 @@ Practic, securitatea întregii aplicații ar fi compromisă, ceea ce ar putea du
 
 ## Întrebări de control
 
-- Ce este un controller de resurse în Laravel și ce rute creează?
-  Un **controller de resurse** în Laravel este un tip special de controller care gestionează resursele CRUD (Create, Read, Update, Delete) pentru un model specific. Laravel facilitează crearea automată a rutelor asociate cu aceste operațiuni prin utilizarea unei comenzi Artisan.
+1. Ce este un controller de resurse în Laravel și ce rute creează?
+   Un **controller de resurse** în Laravel este un tip special de controller care gestionează resursele CRUD (Create, Read, Update, Delete) pentru un model specific. Laravel facilitează crearea automată a rutelor asociate cu aceste operațiuni prin utilizarea unei comenzi Artisan.
 
 Un controller de resurse creează următoarele rute implicite:
 
@@ -186,19 +186,23 @@ Un controller de resurse creează următoarele rute implicite:
 - `GET /tasks/{id}/edit` – edit (formular pentru editarea unei resurse existente)
 - `PUT/PATCH /tasks/{id}` – update (actualizarea unei resurse existente)
 - `DELETE /tasks/{id}` – destroy (ștergerea unei resurse existente)
-- Explicați diferența între crearea manuală a rutelor și utilizarea unui controller de resurse.
+
+2. Explicați diferența între crearea manuală a rutelor și utilizarea unui controller de resurse.
+
 - **Crearea manuală a rutelor** implică definirea fiecărei rute individual, specificând metoda HTTP și acțiunea controller-ului. Aceasta oferă flexibilitate, dar poate deveni rapid complexă și mai greu de întreținut pe măsură ce numărul de rute crește.
 
 - **Utilizarea unui controller de resurse** simplifică această sarcină, generând automat rutele standard pentru operațiunile CRUD. Acest lucru nu doar că reduce boilerplate-ul din cod, dar îmbunătățește și lizibilitatea și întreținerea codului, deoarece rutele sunt grupate logic în jurul resursei.
-- Ce avantaje oferă utilizarea componentelor anonime Blade?
-  **Componentele anonime Blade** oferă mai multe avantaje:
+
+3. Ce avantaje oferă utilizarea componentelor anonime Blade?
+   **Componentele anonime Blade** oferă mai multe avantaje:
 
 - **Reutilizare**: Permite reutilizarea codului în diverse părți ale aplicației, facilitând astfel gestionarea componentelor UI.
 - **Organizare**: Ajută la organizarea codului în componente mici și gestionabile, îmbunătățind astfel structura și lizibilitatea codului.
 - **Scalabilitate**: Poate fi folosit pentru a construi UI complexe, având componenta necesară pentru fiecare parte a interfeței utilizatorului.
 - **Separarea preocupărilor**: Componenta poate conține atât logica, cât și markup-ul asociat, permițând o separare clară a preocupărilor între diferitele părți ale aplicației.
-- Ce metode de cereri HTTP sunt folosite pentru a executa operațiunile CRUD?
-  Operațiunile CRUD utilizează următoarele metode de cereri HTTP:
+
+4. Ce metode de cereri HTTP sunt folosite pentru a executa operațiunile CRUD?
+   Operațiunile CRUD utilizează următoarele metode de cereri HTTP:
 
 - **Create**: `POST` – pentru a crea o nouă resursă.
 - **Read**: `GET` – pentru a citi sau a vizualiza resursele existente.
