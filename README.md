@@ -48,7 +48,7 @@ Practic, securitatea întregii aplicații ar fi compromisă, ceea ce ar putea du
 - Deschideți browserul și accesați adresa http://localhost:8000. Asigurați-vă că pagina goală se încarcă, deoarece vizualizarea home.blade.php nu a fost încă creată.
 
 4. În același controller HomeController, creați o metodă pentru pagina "Despre noi".
-   ![metodahome&about](image-2.png)
+   ![metodahome&about](image-4.png)
 5. Adăugați ruta pentru pagina "Despre noi" în fișierul routes/web.php.
    ![rutehome&about](image-3.png)
 
